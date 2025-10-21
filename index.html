@@ -1,88 +1,32 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    /* Top Navigation */
-    nav {
-      background-color: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.75rem 2rem;
-      position: sticky;
-      top: 0;
-    }
-
-    nav .logo {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #333;
-      text-decoration: none;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    nav ul li a:hover {
-      color: #0077ff;
-    }
-
-    /* Page Content */
-    main {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #222;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mason</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="/" class="logo">MySite</a>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="https://www.imdb.com/title/tt0330588/" target="_blank">Course Link</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <main>
-    <h1>Welcome to MySite</h1>
-    <p>This is a clean and minimal homepage layout with a simple top navigation bar. You can customize it with your own content and links.</p>
+  <header>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/journal.html">Journal</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Course Link</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <h1>Mason</h1>
+    <p>I'm learning how to create new models with AI in order to make our world a better place. My education into AI has so far consisted of different theoretical application styles, an understanding of what models are trained off of, and how to utilize ai in decision making processes. So far It has been a lot of fun</p>
   </main>
+
+  <footer>
+    <p><time datetime="2025-10-14">Oct 14th, 2025</time></p>
+  </footer>
 </body>
-</html>
+</html> 
